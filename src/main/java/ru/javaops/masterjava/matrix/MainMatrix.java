@@ -47,6 +47,6 @@ public class MainMatrix {
     }
 
     private static void out(String format, double ms) {
-        System.out.println(String.format(format, ms));
+        System.out.printf(format + System.lineSeparator(), ms);
     }
 }
