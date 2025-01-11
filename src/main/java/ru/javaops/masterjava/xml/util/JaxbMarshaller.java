@@ -10,12 +10,14 @@ import java.io.Writer;
 
 public class JaxbMarshaller {
     private Marshaller marshaller;
+//    private final Unmarshaller unmarshaller;
 
     public JaxbMarshaller(JAXBContext ctx) throws JAXBException {
         marshaller = ctx.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         marshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);
+//        unmarshaller = ctx.createUnmarshaller();
     }
 
     public void setProperty(String prop, Object value) throws PropertyException {

@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType(name = "flagType", namespace = "http://javaops.ru")
+@XmlType(name = "flagType")
 @XmlEnum
 public enum FlagType {
 
@@ -51,4 +51,7 @@ public enum FlagType {
         throw new IllegalArgumentException(v);
     }
 
+    public String getValue() {
+        return value;
+    }
 }

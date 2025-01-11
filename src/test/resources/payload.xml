@@ -5,6 +5,10 @@
         <User flag="active" city="kiv">
             <email>gmail@gmail.com</email>
             <fullName>Full Name</fullName>
+            <groups>
+                <group>tj01</group>
+                <group>mj01</group>
+            </groups>
         </User>
         <User flag="superuser" city="spb">
             <email>admin@javaops.ru</email>
@@ -20,4 +24,14 @@
         <City id="kiv">Киев</City>
         <City id="mnsk">Минск</City>
     </Cities>
+    <Projects>
+        <Project id="tj">topjava</Project>
+        <Project id="mj">masterjava</Project>
+    </Projects>
+    <Groups>
+        <Group id="tj01" project="tj" condition="finished">topjava-01</Group>
+        <Group id="tj02" project="tj" condition="current">topjava-02</Group>
+        <Group id="mj01" project="mj" condition="current">masterjava-01</Group>
+        <Group id="mj02" project="mj" condition="registering">masterjava-02</Group>
+    </Groups>
 </Payload>

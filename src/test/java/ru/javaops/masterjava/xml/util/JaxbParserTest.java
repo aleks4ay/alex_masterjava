@@ -18,7 +18,7 @@ public class JaxbParserTest {
 
     @Test
     public void testPayload() throws Exception {
-//        JaxbParserTest.class.getResourceAsStream("/city.xml")
+//        JaxbParserTest.class.getResourceAsStream("/city.xml");
         Payload payload = JAXB_PARSER.unmarshal(
                 Resources.getResource("payload.xml").openStream());
         String strPayload = JAXB_PARSER.marshal(payload);
