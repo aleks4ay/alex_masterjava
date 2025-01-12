@@ -48,6 +48,7 @@ public class XPathProcessor {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public <T> T evaluate(XPathExpression expression, QName type) {
         try {
             return (T) expression.evaluate(doc, type);
