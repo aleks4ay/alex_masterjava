@@ -13,10 +13,18 @@
         <User flag="superuser" city="spb">
             <email>admin@javaops.ru</email>
             <fullName>Admin</fullName>
+            <groups>
+                <group>tj02</group>
+                <group>mj01</group>
+            </groups>
         </User>
         <User flag="deleted" city="spb">
             <email>mail@yandex.ru</email>
             <fullName>Deleted</fullName>
+            <groups>
+                <group>tj02</group>
+                <group>mj02</group>
+            </groups>
         </User>
     </Users>
     <Cities>

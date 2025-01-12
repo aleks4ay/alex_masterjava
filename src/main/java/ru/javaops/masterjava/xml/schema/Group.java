@@ -64,4 +64,9 @@ public class Group {
     public void setCondition(GroupConditionType condition) {
         this.condition = condition;
     }
+
+    @Override
+    public String toString() {
+        return "Group{'" + groupName + "', '" + ((Project)project).getValue() + "'}";
+    }
 }

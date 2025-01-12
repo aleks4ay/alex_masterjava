@@ -80,4 +80,15 @@ public class User {
     public void setGroups(ArrayList<Group> groups) {
         this.groups = groups;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", flag=" + flag +
+                ", city=" + ((CityType)city).getValue() +
+                ", groups=" + groups +
+                '}';
+    }
 }
